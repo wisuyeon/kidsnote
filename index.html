@@ -1,0 +1,2124 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="googlebot" content="noindex">
+		<meta name="robots" content="noindex">
+		<title>키즈샵 WSG &copy;가치브라더</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+		<link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css" rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/gh/jablonczay/code-box-copy/code-box-copy/css/code-box-copy.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/combine/gh/jablonczay/code-box-copy/clipboard/clipboard.min.js,gh/jablonczay/code-box-copy/code-box-copy/js/code-box-copy.min.js"></script>
+
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<script src="resource/js/script.js"></script>
+		<link type="text/css" href="resource/css/style.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+	</head>
+
+<!--	* mypage_member > 로그인 : id : test202108 / pw : test2021081!	-->
+
+	<body>  <!-- oncontextmenu='return false' onselectstart='return false' ondragstart='return false' -->
+		<div id="wrap" class="frame"><!-- #wrap class="frame/frame dashboard/noframe/login/error" -->
+			<header id="header" class="header">
+				<h1><img src="resource/img/kidsnote_store.png" class="logo" alt="KIDSNOTE STORE"></h1>
+
+				<button type="button" class="btn toggle-nav" id="navSideToggle">
+					<span class="material-icons">menu_open</span>
+				</button>
+			</header>
+
+			<aside id="aside" class="aside">
+				<nav id="nav" class="aside-nav">
+					<ul>
+						<!-- 단일 메뉴  -->
+						<li class="active">
+							<a href="index.html">
+								<span class="material-icons">grid_view</span>
+								DASHBOARD
+							</a>
+						</li>
+						<li>
+							<a href="checklist.html">
+								<span class="material-icons">done_all</span>
+								CHECKLIST
+							</a>
+						</li>
+						<li>
+							<a href="#" class="toggle-sub">
+								<span class="material-icons">backup_table</span>
+								GUIDELINE
+							</a>
+							<ul>
+								<li><a href="guide.html">GUIDE</a></li>
+								<li><a href="guide_type.html">solution</a></li>
+								<li><a href="guide_html.html">HTML</a></li>
+								<li><a href="guide_css.html">CSS</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="toggle-sub">
+								<span class="material-icons">bookmark_border</span>
+								UI COMPONENTS
+							</a>
+							<ul>
+								<li><a href="ui_product.html">product</a></li>
+								<li><a href="ui_button.html">button</a></li>
+								<li><a href="ui_form.html">form</a></li>
+								<li><a href="ui_tab.html">tab</a></li>
+								<li><a href="ui_list.html">list</a></li>
+								<li><a href="ui_item.html">item</a></li>
+								<li><a href="ui_pop.html">popup</a></li>
+								<li><a href="ui_page.html">pagination</a></li>
+								<li><a href="ui_accordion.html">Accordion</a></li>
+								<li><a href="ui_badge.html">badge/icon</a></li>
+								<li><a href="ui_etc.html">etc</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="qa.html">
+								<span class="material-icons">question_answer</span>
+								QA
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- // Sidebar navigation -->
+			</aside>
+			<!-- // #aside  -->
+
+			<div id="container" class="container">
+				<div class="page-title-bar sticky">
+					<h2 class="page-title">DASHBOARD</h2>
+				</div>
+
+				<div id="content" class="content-primary progress">
+
+					<div class="box-wrap mgt-1rem">
+						<h3 class="box-title">진행률</h3>
+						<button type="button" class="btn js-toggle-switche active">
+							<span class="material-icons">expand_more</span>
+						</button>
+						<div class="js-toggle-target active">
+							<div class="progress-wrap">
+								<h4>layout</h4>
+								<div class="progress-bar">
+									<div class="progress-value"></div>
+								</div>
+							</div>
+							<div class="progress-wrap">
+								<h4>서비스</h4>
+								<div class="progress-bar">
+									<div class="progress-value"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box-wrap mgt-1rem">
+						<h2 class="box-title">layout</h2>
+						<div class="table-wrap">
+							<table class="data-table markup-list">
+								<thead>
+									<tr>
+										<th scope="col">NO</th>
+										<th scope="col"></th>
+										<th scope="col" class="page">PAGE</th>
+										<th scope="col" class="path">PATH</th>
+										<th scope="col" class="pageid">PAGE ID</th>
+										<th scope="col" class="state">STATE</th> <!-- 진행/PC 완료/MO 완료/검수요청/검수완료/완료/삭제/제외/수정완료/대기 -->
+										<th scope="col">ETC</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">헤더</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td>tab swipe, search bar</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">푸터</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상단 띠 배너</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td rowspan="7">하단 TAB BAR</td>
+										<td class="page">전체메뉴_팝업_원</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">전체메뉴_팝업_학부모</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">검색 팝업</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">검색 팝업_검색결과 리스트</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">검색 팝업_검색결과없음</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">바로가기 팝업</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">바로가기 팝업_최근본상품 없을때</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td rowspan="3">공통 POP-UP</td>
+										<td class="page">box Type</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">bottom Type</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">실시간 인기검색어</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="box-wrap mgt-1rem">
+						<h2 class="box-title">서비스</h2>
+						<div class="table-wrap">
+							<table class="data-table markup-list">
+								<thead>
+									<tr>
+										<th scope="col">NO</th>
+										<th scope="col"></th>
+										<th scope="col" class="page">PAGE</th>
+										<th scope="col" class="path">PATH</th>
+										<th scope="col" class="pageid">PAGE ID</th>
+										<th scope="col" class="state">STATE</th>
+										<th scope="col">ETC</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- 01. 메인 -->
+									<tr>
+										<td></td>
+										<td rowspan="4">01. 메인</td>
+										<td class="page">키즈노트 내 스토어 메인_원</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">검수</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">키즈노트 내 스토어 메인_학부모</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">검수</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">키즈노트 앱 내 스토어 메인_원</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">검수</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">키즈노트 앱 내 스토어 메인_학부모</td>
+										<td class="path">main</td>
+										<td class="pageid">index.php</td>
+										<td class="state">검수</td>
+										<td></td>
+									</tr>
+
+									<!-- 02. 쇼핑 -->
+									<tr>
+										<td></td>
+										<td rowspan="38">02. 쇼핑</td>
+										<td class="page">원운영샵</td>
+										<td class="path">shop</td>
+										<td class="pageid"></td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+
+									<tr>
+										<td></td>
+										<td class="page">원운영샵_리스트타입 변환</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1003</td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원운영샵_2depth 선택</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1003</td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">키즈샵_학부모</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1001</td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">리빙샵_학부모</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1002</td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">정기배송_학부모</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1020</td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">오늘의 핫딜</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1009</td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">추천상품_원</td>
+										<td class="path">shop</td>
+										<td class="pageid"></td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">추천상품_학부모</td>
+										<td class="path">shop</td>
+										<td class="pageid"></td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">기획전_원운영샵</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1011</td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">기획전_학부모_2depth 활성화</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1011</td>
+										<td class="state">진행</td>
+										<td>12/31</td>
+									</tr>
+										<td></td>
+										<td class="page">누리교육과정준비물</td>
+										<td class="path">shop</td>
+										<td class="pageid"></td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">누리교육과정준비물 _3depth 선택</td>
+										<td class="path">shop</td>
+										<td class="pageid"></td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_일반배송_학부모_기본</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_일반배송_학부모_구매팝업</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_일반배송_기본</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">팝업_쿠폰다운로드</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1019</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">팝업_쿠폰적용 전</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1019</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">팝업_개별상품 쿠폰 적용</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1019</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">팝업_쿠폰적용 후</td>
+										<td class="path">shop</td>
+										<td class="pageid">big_section.php?cno1=1019</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_일반배송_선생님</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_일반배송_선생님_구매 팝업</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_일반배송_선생님_구매 팝업_옵션 선택</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_정기배송_학부모</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_정기배송_학부모_구매 팝업</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_정기배송_원장선생님 및 결제권한 유저</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php></td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상품상세_정기배송_원장선생님 및 결제권한 유저_구매 팝업</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상세하단 > 상품정보 탭</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상세하단 > 리뷰 탭</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">포토리뷰 상세 팝업</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상세하단 > 리뷰 탭_리뷰없음</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">리뷰작성 입력폼 레이어팝업</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">리뷰작성 입력폼 레이어팝업_작성</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상세하단 > 상품문의 탭</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상세하단 > 상품문의 탭_비공개글 열람시</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상세하단 > 상품문의 탭_작성폼</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상세하단 > 상품문의 탭_수정</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">상세하단 > 배송교환반품 탭</td>
+										<td class="path">shop</td>
+										<td class="pageid">detail.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+
+									<!-- 03. 장바구니 -->
+									<tr>
+										<td></td>
+										<td rowspan="11">03. 장바구니</td>
+										<td class="page">내 장바구니_일반배송</td>
+										<td class="path">shop</td>
+										<td class="pageid">cart.php</td>
+										<td class="state">완료</td>
+										<td>옵션변경(shop_cart_chgOption.html) 팝업<br>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">정기배송 내용작성 팝업</td>
+										<td class="path">shop</td>
+										<td class="pageid">cart.php?sbscr=Y</td>
+										<td class="state">완료</td>
+										<td>공통<br>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">내 장바구니_정기배송</td>
+										<td class="path">shop</td>
+										<td class="pageid">cart.php?sbscr=Y</td>
+										<td class="state">완료</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">결제요청 내용작성 팝업</td>
+										<td class="path">shop</td>
+										<td class="pageid">-</td>
+										<td class="state">완료</td>
+										<td>원공통<br>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">결제요청 내용작성 팝업_그 외 배송 탭</td>
+										<td class="path">shop</td>
+										<td class="pageid">-</td>
+										<td class="state">완료</td>
+										<td>원공통<br>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 장바구니_일반배송_선생님</td>
+										<td class="path">shop</td>
+										<td class="pageid">cart_center.php</td>
+										<td class="state">완료</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 장바구니_정기배송_선생님</td>
+										<td class="path">shop</td>
+										<td class="pageid">cart_center.php?sbscr=Y</td>
+										<td class="state">완료</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 장바구니_일반배송_원장님/결제권한</td>
+										<td class="path">shop</td>
+										<td class="pageid">-</td>
+										<td class="state">완료</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 장바구니_정기배송_원장님/결제권한</td>
+										<td class="path">shop</td>
+										<td class="pageid">-</td>
+										<td class="state">완료</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 장바구니 조회 탭_선생님 별</td>
+										<td class="path">shop</td>
+										<td class="pageid">-</td>
+										<td class="state">완료</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 장바구니 조회 탭_결제요청 별</td>
+										<td class="path">shop</td>
+										<td class="pageid">-</td>
+										<td class="state">완료</td>
+										<td>12/24</td>
+									</tr>
+
+									<!-- 04. 주문결제 -->
+									<tr>
+										<td></td>
+										<td rowspan="18">04. 주문결제</td>
+										<td class="page">신용카드 결제_비회원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>비회원 권한 이슈</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">에스크로 가상결제_비회원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>비회원 권한 이슈</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">환불정보 입력_비회원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>비회원 권한 이슈</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">일반배송_학부모</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">정기배송_학부모</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">일반배송_원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">정기배송_원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">비회원 주문 완료_원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">일반배송 주문 완료_학부모</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">정기배송 주문 완료_학부모</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">일반배송 주문 완료_원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">정기배송 주문 완료_원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">전체 쿠폰_팝업</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">개별 쿠폰_팝업</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">배송지_목록_팝업</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">배송지_신규_팝업</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 배송지_목록_팝업</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 배송지_신규_팝업</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">진행</td>
+										<td>12/24</td>
+									</tr>
+
+									<!-- 05. 마이페이지 -->
+									<tr>
+										<td></td>
+										<td rowspan="50">05. 마이페이지</td>
+										<td class="page">마이페이지_원</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">마이페이지_학부모</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">내 주문_전체 주문</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">내 주문_주문 취소</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">내 주문_반품 신청</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">내 주문_교환 신청</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 주문_전체 주문</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">내 주문_정기 주문</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 주문_정기 주문</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">주문상세내역_일반배송</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">주문상세내역_정기배송</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">취소/반품 신청</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">교환 신청</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물함</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물함 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">내 캔디포인트</td>
+										<td class="path">mypage</td>
+										<td class="pageid">milage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 캔디포인트</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">쿠폰_내 사용가능 쿠폰</td>
+										<td class="path">mypage</td>
+										<td class="pageid">coupon_down_list.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">쿠폰_원 사용가능 쿠폰</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">나의리뷰_리뷰작성</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">나의리뷰_작성한리뷰</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">1:1문의_리스트</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">1:1문의_작성</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">1:1문의_수정</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">검수</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">나의 상품 문의_리스트</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">나의 상품 문의_작성</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">나의 상품 문의_수정</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">카드 관리</td>
+										<td class="path">mypage</td>
+										<td class="pageid">card_billing.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">카드 등록 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">카드 수정 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">배송지 관리</td>
+										<td class="path">mypage</td>
+										<td class="pageid">destination_list.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">배송지 추가 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">배송지 관리 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">관심상품_일반배송</td>
+										<td class="path">mypage</td>
+										<td class="pageid">wish_list.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">관심상품_정기배송</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">최근 본 상품</td>
+										<td class="path">mypage</td>
+										<td class="pageid">click_prd.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">서류관리_견적서/거래명세/카드전표</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">서류관리_세금계산서/현금영수증</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">서류관리_세금계산서 발급신청 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">서류관리_세금계산서 발급신청 입력 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">서류관리_세금계산서 발급신청 수정 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">서류관리_현금영수증 발급신청 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">권한 관리</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 배송지 관리</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 배송지 추가 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 배송지 관리 팝업</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">결제 반려_일반배송_선생님</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">결제 반려_정기배송_선생님</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">결제 반려_일반배송_원장님</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">결제 반려_정기배송_원장님</td>
+										<td class="path">mypage</td>
+										<td class="pageid">mypage.php</td>
+										<td class="state">대기</td>
+										<td>12/31</td>
+									</tr>
+
+									<!-- 06. 이벤트 -->
+									<tr>
+										<td></td>
+										<td rowspan="3">06. 이벤트</td>
+										<td class="page">진행 중 이벤트</td>
+										<td class="path">board</td>
+										<td class="pageid">?db=gallery_1</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">종료된 이벤트</td>
+										<td class="path">board</td>
+										<td class="pageid">?db=gallery_1&cate=18</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">이벤트 상세</td>
+										<td class="path">board</td>
+										<td class="pageid">?db=gallery_1&no=18&mari_mode=view%40view&cate=17&page=1&search=&search_str=&temp=</td>
+										<td class="state">완료</td>
+										<td></td>
+									</tr>
+
+									<!-- 07. 고객센터 -->
+									<tr>
+										<td></td>
+										<td rowspan="14">07. 고객센터</td>
+										<td class="page">고객센터</td>
+										<td class="path">board</td>
+										<td class="pageid">?db=basic_3</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">FAQ</td>
+										<td class="path">board</td>
+										<td class="pageid">?db=basic_2</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">FAQ_검색결과 리스트</td>
+										<td class="path">board</td>
+										<td class="pageid">index.php?cate=&db=basic_2&search=title&search_str=%EC%BF%A0%ED%8F%B0</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">FAQ_검색결과없음</td>
+										<td class="path">board</td>
+										<td class="pageid">index.php?cate=&db=basic_2&search=title&search_str=%EA%BF%B0</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">공지사항</td>
+										<td class="path">board</td>
+										<td class="pageid">?db=basic_1</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">공지사항_검색결과 리스트</td>
+										<td class="path">board</td>
+										<td class="pageid">?cate=&db=basic_1&search=title&search_str=%ED%85%8C%EC%8A%A4%ED%8A%B8</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">공지사항_검색결과없음</td>
+										<td class="path">board</td>
+										<td class="pageid">?cate=&db=basic_1&search=title&search_str=%EA%BF%B0</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">공지사항_상세</td>
+										<td class="path">board</td>
+										<td class="pageid">?db=basic_1&no=36&mari_mode=view%40view&cate=&page=1&search=&search_str=&temp=</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">공지사항_상세(img)</td>
+										<td class="path">board</td>
+										<td class="pageid">?db=basic_1&no=19&mari_mode=view@view</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">1:1문의</td>
+										<td class="path">board</td>
+										<td class="pageid">ounsel_main.php</td>
+										<td class="state">완료</td>
+										<td>12/6</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">입점/제휴 제안 > 안내 탭</td>
+										<td class="path">board</td>
+										<td class="pageid">roposal.php</td>
+										<td class="state">검수</td>
+										<td>12/7</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">입점/제휴 제안 > 안내 탭_활성화</td>
+										<td class="path">board</td>
+										<td class="pageid"></td>
+										<td class="state">검수</td>
+										<td>12/7</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">입점/제휴 제안 > 작성 탭</td>
+										<td class="path">board</td>
+										<td class="pageid"></td>
+										<td class="state">검수</td>
+										<td>12/7</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">입점/제휴 제안 > 작성 탭_입력/활성화</td>
+										<td class="path">board</td>
+										<td class="pageid"></td>
+										<td class="state">검수</td>
+										<td>12/7</td>
+									</tr>
+
+									<!-- 08. 리뷰 -->
+									<tr>
+										<td></td>
+										<td rowspan="2">08. 리뷰</td>
+										<td class="page">포토리뷰</td>
+										<td class="path">shop</td>
+										<td class="pageid">product_review_list.php</td>
+										<td class="state">완료</td>
+										<td>상세 팝업<br>12/14</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">일반리뷰</td>
+										<td class="path">shop</td>
+										<td class="pageid">product_review_list.php?review_type=text</td>
+										<td class="state">완료</td>
+										<td>상세 팝업<br>12/14</td>
+									</tr>
+
+									<!-- 09. 비회원 주문조회 -->
+									<tr>
+										<td></td>
+										<td rowspan="2">09. 비회원 주문조회</td>
+										<td class="page">비회원 주문조회 로그인</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>비회원 권한 이슈</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">비회원 주문상세</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>비회원 권한 이슈</td>
+									</tr>
+
+									<!-- 10. 검색결과 -->
+									<tr>
+										<td></td>
+										<td rowspan="2">10. 검색결과</td>
+										<td class="page">검색결과 전체</td>
+										<td class="path">shop</td>
+										<td class="pageid">search_result.php?search_str=%ED%9D%A1%EC%B0%A9%20%EB%B8%94%EB%9F%AD</td>
+										<td class="state">완료</td>
+										<td>12/8</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">검색결과 상품 없음</td>
+										<td class="path">shop</td>
+										<td class="pageid">search_result.php?search_str=%EB%83%89%EA%B0%90%EC%9D%B4%EB%B6%88</td>
+										<td class="state">완료</td>
+										<td>12/8</td>
+									</tr>
+
+									<!-- 11. 선물하기 -->
+									<tr>
+										<td></td>
+										<td rowspan="13">11. 선물하기</td>
+										<td class="page">선물하기_실 배송 상품</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물하기 완료</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물 수락하기</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물 수락완료_비회원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물 수락완료_회원</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물하기_전체공통</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원 선택</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">원장님 선택</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">대상 선택_선생님</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">대상 선택_학부모</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물하기 완료</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물 수락하기(모바일 쿠폰)</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="page">선물 수락완료(모바일 쿠폰)</td>
+										<td class="path">html</td>
+										<td class="pageid">-</td>
+										<td class="state">대기</td>
+										<td>12/15</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="box-wrap mgt-1rem" style="display: none;">
+						<h2 class="box-title">wisa 기준</h2>
+						<div class="table-wrap">
+							<table class="data-table markup-list">
+								<thead>
+									<tr>
+										<th scope="col">NO</th>
+										<th scope="col"></th>
+										<th scope="col" class="page">PAGE</th>
+										<th scope="col" class="path">PATH</th>
+										<th scope="col" class="pageid">PAGE ID</th>
+										<th scope="col" class="state">STATE</th>
+										<th scope="col">ETC</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>회사정보</td>
+										<td class="page">회사 소개</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/content.php?cont=company">📲</a></td>
+										<td class="pageid">/content/content.php?cont=company</td>
+										<td class="state">대기</td><!-- 진행/PC 완료/MO 완료/검수요청/검수완료/완료/삭제/제외/수정완료/대기 -->
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">이용 안내</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/content.php?cont=guide">📲</a></td>
+										<td class="pageid">/content/content.php?cont=guide</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">고객센터 메인</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/content.php?cont=customer">📲</a></td>
+										<td class="pageid">/content/content.php?cont=customer</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">회원가입 약관</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/content.php?cont=join_rull">📲</a></td>
+										<td class="pageid">/content/content.php?cont=join_rull</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">개인정보 처리방침</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/content.php?cont=privacy">📲</a></td>
+										<td class="pageid">/content/content.php?cont=privacy</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">이용약관</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/content.php?cont=uselaw">📲</a></td>
+										<td class="pageid">/content/content.php?cont=uselaw</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>주문관련</td>
+										<td class="page">주문서</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/shop/cart.php">📲</a></td>
+										<td class="pageid">/content/shop/cart.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">주문 완료</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/shop/order_finish.php">📲</a></td>
+										<td class="pageid">/content/shop/order_finish.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">퀵카트1</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/shop/cart_layer1.php">📲</a></td>
+										<td class="pageid">/content/shop/cart_layer1.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">퀵카트2</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/shop/cart_layer2.php">📲</a></td>
+										<td class="pageid">/content/shop/cart_layer2.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>상품관련</td>
+										<td class="page">누리과정</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/big_section.php?cno1=1562">📲</a></td>
+										<td class="pageid">/shop/big_section.php?cno1=1562</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품 상세 내용(개인결제)</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/detail_private.php">📲</a></td>
+										<td class="pageid">/shop/detail_private.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">개별상품 쿠폰 선택 리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/detail_prdcpn.php">📲</a></td>
+										<td class="pageid">/shop/detail_prdcpn.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품 퀵프리뷰</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/detail_frame.php">📲</a></td>
+										<td class="pageid">/shop/detail_frame.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품 퀵프리뷰(팝업)</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/detail_popup.php">📲</a></td>
+										<td class="pageid">/shop/detail_popup.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품 퀵프리뷰(팝업-개인결제)</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/detail_popup_private.php">📲</a></td>
+										<td class="pageid">/shop/detail_popup_private.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">최근 본 상품 리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/click_prd.php">📲</a></td>
+										<td class="pageid">/shop/click_prd.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품 검색 결과 리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/search_result.php">📲</a></td>
+										<td class="pageid">/shop/search_result.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품 카테고리</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/category.php">📲</a></td>
+										<td class="pageid">/shop/category.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">재입고 알림 신청</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/otify_restock.php">📲</a></td>
+										<td class="pageid">/shop/otify_restock.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">정기배송 상품상세 레이어</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/detail_subscription.php">📲</a></td>
+										<td class="pageid">/shop/detail_subscription.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">지금 가장 많이 팔리는 상품</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/big_section.php?cno1=1794">📲</a></td>
+										<td class="pageid">/shop/big_section.php?cno1=1794</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상단띠배너</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/big_section.php?cno1=1143">📲</a></td>
+										<td class="pageid">/shop/big_section.php?cno1=1143</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">검색결과</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/big_section.php?cno1=1856">📲</a></td>
+										<td class="pageid">/shop/big_section.php?cno1=1856</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>회원관련</td>
+										<td class="page">회원 정보 수정 1단계 비밀번호 확인</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/edit_step1.php">📲</a></td>
+										<td class="pageid">/member/edit_step1.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">회원 정보 수정 완료</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/edit_step3.php">📲</a></td>
+										<td class="pageid">/member/edit_step3.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">아이디 비밀번호 찾기</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/edit_step1.php">📲</a></td>
+										<td class="pageid">/member/edit_step1.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">아이디 비밀번호 찾기 인증</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/search_id_pwd.php">📲</a></td>
+										<td class="pageid">/member/search_id_pwd.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">비밀번호 변경</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/modify_pwd.php">📲</a></td>
+										<td class="pageid">/member/modify_pwd.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">회원 가입 1단계 약관 동의</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/join_step1.php">📲</a></td>
+										<td class="pageid">/member/join_step1.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">회원 가입 완료</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/join_step3.php">📲</a></td>
+										<td class="pageid">/member/join_step3.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">SNS 회원 가입 폼</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/apijoin.php">📲</a></td>
+										<td class="pageid">/member/apijoin.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">SNS 회원 통합 폼</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/member/apijoin_noterms.php">📲</a></td>
+										<td class="pageid">/member/apijoin_noterms.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>마이페이지</td>
+										<td class="page">마이페이지 결제방식 변경</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/order_paytype.php">📲</a></td>
+										<td class="pageid">/mypage/order_paytype.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">고객 상담 리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/counsel_list.php">📲</a></td>
+										<td class="pageid">/mypage/counsel_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">고객 상담 입력</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/counsel_step1.php">📲</a></td>
+										<td class="pageid">/mypage/counsel_step1.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">고객 상담 완료</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/counsel_step2.php">📲</a></td>
+										<td class="pageid">/mypage/counsel_step2.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">쿠폰 리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/coupon_down_list.php">📲</a></td>
+										<td class="pageid">/mypage/coupon_down_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">소셜쿠폰 사용</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/sccoupon.php">📲</a></td>
+										<td class="pageid">/mypage/sccoupon.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">소셜쿠폰 사용리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/sccoupon_list.php">📲</a></td>
+										<td class="pageid">/mypage/sccoupon_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">예치금 내역</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/emoney.php">📲</a></td>
+										<td class="pageid">/mypage/emoney.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">적립금 내역</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/milage.php">📲</a></td>
+										<td class="pageid">/mypage/milage.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">주문서 상세 내용</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/order_detail.php">📲</a></td>
+										<td class="pageid">/mypage/order_detail.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">주문서 리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/order_list.php">📲</a></td>
+										<td class="pageid">/mypage/order_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">찜한 상품/위시 리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/wish_list.php">📲</a></td>
+										<td class="pageid">/mypage/wish_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">나의 상품 질문과 답변</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/qna_list.php">📲</a></td>
+										<td class="pageid">/mypage/qna_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">나의 상품 질문과 답변</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/review_list.php">📲</a></td>
+										<td class="pageid">/mypage/review_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">나의 상품 이용 후기</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/notify_restock.php">📲</a></td>
+										<td class="pageid">/mypage/notify_restock.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">출석체크</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/attend_list.php">📲</a></td>
+										<td class="pageid">/mypage/attend_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">회원 탈퇴 신청</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/withdraw_step1.php">📲</a></td>
+										<td class="pageid">/mypage/withdraw_step1.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">회원 탈퇴 완료</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/withdraw_step2.php">📲</a></td>
+										<td class="pageid">/mypage/withdraw_step2.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">정기배송 주문서 리스트</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/order_sbscr_list.php">📲</a></td>
+										<td class="pageid">/mypage/order_sbscr_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">정기배송 주문서 상세 내용</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/order_sbscr_detail.php">📲</a></td>
+										<td class="pageid">/mypage/order_sbscr_detail.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">정기배송 주문서 주소 변경</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/mypage/sbscr_dlv_edit.php">📲</a></td>
+										<td class="pageid">/mypage/sbscr_dlv_edit.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>게시판정보</td>
+										<td class="page">모든 상품 질문과 답변</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/product_qna_list.php">📲</a></td>
+										<td class="pageid">/shop/product_qna_list.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품별 이용 후기</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/product_review.php">📲</a></td>
+										<td class="pageid">/shop/product_review.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품 이용 후기 상세 레이어</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/product_review_detail.php">📲</a></td>
+										<td class="pageid">/shop/product_review_detail.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="page">상품 이용 후기 비밀번호 입력 레이어</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/shop/product_review_pwd.php">📲</a></td>
+										<td class="pageid">/shop/product_review_pwd.php</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>기타</td>
+										<td class="page">프로모션 기획전 상세</td>
+										<td class="path"><a href="http://m.kidsnote.mywisa.co.kr/content/content.php?cont=promotion_detail">📲</a></td>
+										<td class="pageid">/content/content.php?cont=promotion_detail</td>
+										<td class="state">대기</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
